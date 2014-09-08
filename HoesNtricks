@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args)
+	{
+		Scanner hoesInput = new Scanner(System.in);
+		Scanner bitchesInput = new Scanner(System.in);
+		int bitches = 0;
+		int hoes = 0;
+		int trickery;
+		final int B_Vol = 2;
+		final int H_Vol = 10;
+		System.out.println("How many bitches do you have?");
+		bitches = bitchesInput.nextInt();
+		System.out.println("How many hoes you got?");
+		hoes = hoesInput.nextInt();
+		trickery = bitches * B_Vol + hoes * H_Vol;
+		System.out.println("Trickery has a total of " + trickery);
+		
+	}
+
+}
